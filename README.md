@@ -82,8 +82,29 @@ Os macronutrientes serão calculados baseados nos seguintes parâmetros e regras
 
   - [NuGet](https://www.nuget.org/)
 
-# Exemplos Fictícios
+# Exemplo
+
+Exemplo de cálculo de IMC e Macronutrientes, utilizando a aplicação console para teste de uso da biblioteca.
+<img src='exemplo-console.jpg' alt='Exemplo'>
 
 # Pontos para Evolução
 
+- Considerar gravidez para os cálculos de IMC e Macronutrientes
+- Cálculos mais detalhados dos Macronutrientes (como levar em consideração a taxa de metabolismo basal, que pode ser estimada por outras fórmulas)
+
 # Como utilizar
+
+Instalar a [biblioteca](https://www.nuget.org/packages/health-calc-pack-dotnet-bbt-pies) através de qualquer um dos métodos listados no link.
+
+Criar uma nova instância das classes que darão acesso as funções:
+
+- BMI (classe para o IMC)
+
+  - Calc (realiza o cálculo do IMC)
+  - GetBMIClass (Retorna a categoria de peso, dado um IMC)
+
+- Macronutrients (Classe para cálculo de macronutrientes)
+  - Calc (realiza o cálculo do consumo diário de macronutrientes)
+
+Uma aplicação console de exemplo foi desenvolvida para demonstração de
+[utilização](https://github.com/bernardobt/health-calc-pack-dotnet/blob/main/src/health-calc-dotnet/health-calc-console-dotnet/Program.cs).
